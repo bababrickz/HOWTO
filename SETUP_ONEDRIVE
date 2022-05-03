@@ -1,0 +1,20 @@
+1_###################################################################
+# - COPY CONFIG FILE TO...
+# - ~ --> /home/<USERNAME>
+#####################################################################
+
+cp /usr/share/doc/onedrive/config ~/.config/onedrive
+
+2_###################################################################
+# - COPY CONFIG FILE TO...
+# - ~ --> /home/<USERNAME>
+#####################################################################
+
+systemctl status --user onedrive
+
+systemctl --user stop onedrive    
+
+sudo mousepad config  
+
+onedrive --synchronize --resync
+onedrive --synchronize --verbose --dry-run
